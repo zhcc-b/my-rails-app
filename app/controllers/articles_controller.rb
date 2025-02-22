@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   def index
-    @query = params[:q]
-    @articles = @query.present? ? Article.search(@query) : []
+    @query = params[:q] || "Today"
+    @articles = Article.search(@query)
   end
 
   def details
