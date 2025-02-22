@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title"><%= @article['title'] %></h1>
+      
+      <% if @article['original'] %>
+        <%= image_tag @article['original']['source'], 
+            class: "img-fluid mb-3", 
+            alt: @article['title'] %>
+      <% end %>
+
+      <div class="card-text">
+        <%= @article['extract'] %>
+      </div>
+
+      <%= link_to 'Back to Search', root_path, class: 'btn btn-primary mt-3' %>
+    </div>
+  </div>
+</div>

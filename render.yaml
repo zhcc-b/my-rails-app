@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: a3-wiki
+    runtime: ruby
+    buildCommand: bundle install
+    startCommand: bundle exec rails s
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
