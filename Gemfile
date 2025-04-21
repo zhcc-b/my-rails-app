@@ -64,6 +64,6 @@ end
 
 source "https://rubygems.org"
 
-gem "bootstrap", "~> 5.3.0"
+gem "bootstrap", "~> 5.3.5"
 gem "sassc-rails"
 gem "httparty"
